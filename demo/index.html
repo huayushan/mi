@@ -10,13 +10,16 @@
 <body>
 
 </body>
-<script src="../src/ori.js"></script>
+<script src="../dist/mi.js"></script>
 <script>
-    layui.define(function (exports) {
-      exports('test', function () {
-        console.log(1);
-      })
-    });
-    layui.test();
+  mi.use('alert', function () {
+    mi.alert({
+      title: '提示',
+      content: '与世界分享你的知识、' +
+      '经验和见解与世界分享你的知识、' +
+      '经验和见解与世界分享你的知识、' +
+      '经验和见解与世界分享你的知识、经验和见解'
+    })
+  });
 </script>
 </html>
